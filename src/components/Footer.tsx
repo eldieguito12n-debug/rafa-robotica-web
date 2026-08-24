@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { siteConfig } from "@/data/siteConfig";
-import { Facebook, Instagram } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -35,10 +34,10 @@ export function Footer() {
             <h4 className="text-lg font-bold text-foreground">Síguenos</h4>
             <div className="flex gap-4">
               <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-surface-light flex items-center justify-center text-foreground hover:bg-[#1877F2] hover:text-white transition-colors" title="Facebook">
-                <Facebook size={20} />
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
               </a>
               <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-surface-light flex items-center justify-center text-foreground hover:bg-[#E4405F] hover:text-white transition-colors" title="Instagram">
-                <Instagram size={20} />
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
               </a>
               <a href={siteConfig.social.tiktok} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-surface-light flex items-center justify-center text-foreground hover:bg-[#000000] hover:text-white transition-colors" title="TikTok">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
