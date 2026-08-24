@@ -50,7 +50,7 @@ export function Projects() {
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold mb-3 text-foreground">{project.title}</h3>
                 <p className="text-foreground/70 mb-6 flex-grow">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech) => (
                     <span 
                       key={tech} 
@@ -60,6 +60,17 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
+                {project.videoUrl && (
+                  <a 
+                    href={project.videoUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-flex items-center gap-2 text-sm font-bold text-primary hover:text-white transition-colors"
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    Ver Video en Facebook
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}
