@@ -9,8 +9,9 @@ export const siteConfig = {
     location: "Ubicación pendiente",
   },
   social: {
-    linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
-    facebook: "https://facebook.com",
+    facebook: "https://facebook.com/rafarobotica",
+    instagram: "https://instagram.com/rafarobotica",
+    tiktok: "https://tiktok.com/@rafarobotica",
+    whatsapp: "https://wa.me/1234567890",
   },
 };

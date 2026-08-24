@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { siteConfig } from "@/data/siteConfig";
+import { Facebook, Instagram } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-background border-t border-surface-light pt-16 pb-8">
+    <footer className="bg-surface border-t border-surface-light pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
@@ -32,11 +33,25 @@ export function Footer() {
           {/* Redes Sociales */}
           <div className="space-y-4">
             <h4 className="text-lg font-bold text-foreground">Síguenos</h4>
-            <nav className="flex flex-col space-y-3">
-              <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">LinkedIn</a>
-              <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">Instagram</a>
-              <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">Facebook</a>
-            </nav>
+            <div className="flex gap-4">
+              <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-surface-light flex items-center justify-center text-foreground hover:bg-[#1877F2] hover:text-white transition-colors" title="Facebook">
+                <Facebook size={20} />
+              </a>
+              <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-surface-light flex items-center justify-center text-foreground hover:bg-[#E4405F] hover:text-white transition-colors" title="Instagram">
+                <Instagram size={20} />
+              </a>
+              <a href={siteConfig.social.tiktok} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-surface-light flex items-center justify-center text-foreground hover:bg-[#000000] hover:text-white transition-colors" title="TikTok">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5v3a3 3 0 0 1-3-3v11a7 7 0 1 1-7-7z" />
+                </svg>
+              </a>
+              <a href={siteConfig.social.whatsapp} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-surface-light flex items-center justify-center text-foreground hover:bg-[#25D366] hover:text-white transition-colors" title="WhatsApp">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M17.498 14.382c-.301-.15-1.767-.867-2.04-.966-.273-.101-.473-.15-.673.15-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.06-.301-.15-1.265-.462-2.406-1.485-.888-.795-1.484-1.77-1.66-2.07-.174-.3-.019-.465.13-.615.136-.135.301-.345.451-.523.146-.181.194-.301.297-.496.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.172-.015-.371-.015-.571-.015-.2 0-.523.074-.797.359-.273.3-1.045 1.02-1.045 2.475s1.07 2.865 1.219 3.075c.149.21 2.095 3.18 5.077 4.46 2.021.868 2.846.945 3.962.795 1.211-.165 3.731-1.5 4.256-2.954.524-1.455.524-2.7.374-2.955-.15-.255-.55-.39-1.046-.645z"/>
+                  <path d="M12 21.5c-1.622 0-3.21-.437-4.596-1.266l-4.908 1.286 1.309-4.786C2.906 15.344 2.5 13.697 2.5 12c0-5.239 4.261-9.5 9.5-9.5s9.5 4.261 9.5 9.5-4.261 9.5-9.5 9.5z"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -44,10 +59,6 @@ export function Footer() {
           <p className="text-sm text-foreground/50">
             &copy; {currentYear} {siteConfig.name}. Todos los derechos reservados.
           </p>
-          <div className="flex gap-6">
-            <Link href="#" className="text-sm text-foreground/50 hover:text-foreground transition-colors">Política de Privacidad</Link>
-            <Link href="#" className="text-sm text-foreground/50 hover:text-foreground transition-colors">Términos de Servicio</Link>
-          </div>
         </div>
       </div>
     </footer>
