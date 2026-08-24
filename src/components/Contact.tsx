@@ -131,7 +131,7 @@ export function Contact() {
 
               <button 
                 type="submit" 
-                className="w-full bg-primary hover:bg-emerald-400 text-background font-bold text-lg py-4 rounded-xl transition-colors flex items-center justify-center gap-2"
+                className="w-full bg-primary hover:bg-cyan-400 text-background font-bold text-lg py-4 rounded-xl transition-colors flex items-center justify-center gap-2"
               >
                 Enviar Mensaje
                 <Send className="w-5 h-5" />

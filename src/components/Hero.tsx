@@ -39,7 +39,7 @@ export function Hero() {
         >
           <Link 
             href="#projects" 
-            className="px-8 py-3 rounded-full bg-primary text-background font-bold text-lg hover:bg-emerald-400 transition-colors w-full sm:w-auto"
+            className="px-8 py-3 rounded-full bg-primary text-background font-bold text-lg hover:bg-cyan-400 transition-colors w-full sm:w-auto"
           >
             Conoce nuestros proyectos
           </Link>
