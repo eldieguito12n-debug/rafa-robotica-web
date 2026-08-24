@@ -6,18 +6,18 @@ import { Bot, Target, Lightbulb } from "lucide-react";
 export function About() {
   const cards = [
     {
-      title: "Nuestra Misión",
-      description: "Desarrollar soluciones tecnológicas accesibles y altamente eficientes que impulsen el progreso en la industria y la agricultura mediante robótica e IA.",
-      icon: Target,
-    },
-    {
       title: "Nuestra Visión",
-      description: "Ser líderes en el desarrollo de hardware y software inteligente, creando un ecosistema tecnológico que facilite la vida humana y proteja el medio ambiente.",
+      description: "Construir soluciones tecnológicas que aporten al desarrollo de las empresas y las comunidades, haciendo de la innovación una herramienta accesible, práctica y capaz de transformar la manera en que hacemos las cosas.",
       icon: Lightbulb,
     },
     {
+      title: "Un Aliado Tecnológico",
+      description: "Nos involucramos en cada proyecto desde la identificación de la necesidad hasta el desarrollo de la solución. Trabajamos de manera cercana para entender los procesos, encontrar oportunidades de mejora y convertir ideas en resultados funcionales.",
+      icon: Target,
+    },
+    {
       title: "Nuestro Enfoque",
-      description: "Innovación continua, diseño centrado en el usuario, desarrollo a medida y uso de tecnologías de vanguardia para asegurar el éxito de cada proyecto.",
+      description: "No partimos de una solución predeterminada. Escuchamos, analizamos cada necesidad y desarrollamos propuestas a la medida, combinando conocimiento técnico, creatividad e innovación.",
       icon: Bot,
     },
   ];
@@ -27,23 +27,37 @@ export function About() {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <motion.h2 
-            className="text-3xl md:text-5xl font-bold mb-6 text-foreground"
+            className="text-3xl md:text-5xl font-bold mb-4 text-foreground"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            ¿Quiénes Somos?
+            Quiénes Somos
           </motion.h2>
-          <motion.p 
-            className="text-lg text-foreground/70"
+          <motion.h3
+            className="text-xl md:text-2xl text-primary font-medium mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            Transformamos necesidades en soluciones tecnológicas
+          </motion.h3>
+          <motion.div 
+            className="text-lg text-foreground/70 space-y-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            En Rafa Robótica, somos un equipo apasionado por la tecnología, dedicado a transformar ideas complejas en realidades funcionales a través de la robótica, automatización e inteligencia artificial.
-          </motion.p>
+            <p>
+              Somos una empresa de desarrollo e innovación tecnológica dedicada al diseño y creación de soluciones que integran robótica, electrónica, automatización y tecnología para responder a necesidades reales de empresas, organizaciones y comunidades.
+            </p>
+            <p>
+              Creemos que la tecnología tiene mayor valor cuando resuelve problemas concretos, optimiza procesos y abre nuevas posibilidades.
+            </p>
+          </motion.div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

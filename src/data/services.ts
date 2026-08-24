@@ -1,46 +1,46 @@
-import { Cpu, Bot, Zap, Code2, MonitorSmartphone, Sprout, PenTool } from "lucide-react";
+import { Bot, Zap, Cpu, Settings, Code2, PenTool, Lightbulb } from "lucide-react";
 
 export const services = [
   {
-    id: "robotica",
-    title: "Robótica",
-    description: "Diseño y desarrollo de sistemas robóticos adaptados a tus necesidades industriales y de investigación.",
+    id: "robotica-automatizacion",
+    title: "Robótica y automatización",
+    description: "Diseñamos sistemas robóticos y automatizados para optimizar el rendimiento industrial.",
     icon: Bot,
   },
   {
-    id: "automatizacion",
-    title: "Automatización",
-    description: "Optimizamos procesos industriales mediante soluciones de automatización eficientes y seguras.",
-    icon: Zap,
-  },
-  {
-    id: "ia",
-    title: "Inteligencia Artificial",
-    description: "Implementación de algoritmos de IA y visión artificial para la toma de decisiones y automatización avanzada.",
+    id: "electronica-control",
+    title: "Electrónica y sistemas de control",
+    description: "Desarrollo de circuitos y sistemas embebidos para el control preciso de procesos.",
     icon: Cpu,
   },
   {
-    id: "desarrollo-software",
-    title: "Desarrollo de Software",
-    description: "Creación de aplicaciones web, móviles y sistemas a medida para controlar y monitorear tus dispositivos.",
+    id: "desarrollo-prototipos",
+    title: "Desarrollo de prototipos",
+    description: "Materializamos ideas creando prototipos funcionales para validar conceptos y tecnologías.",
+    icon: PenTool,
+  },
+  {
+    id: "optimizacion-procesos",
+    title: "Optimización y automatización de procesos",
+    description: "Mejoramos la eficiencia operativa mediante la implementación de soluciones tecnológicas.",
+    icon: Zap,
+  },
+  {
+    id: "soluciones-medida",
+    title: "Diseño de soluciones tecnológicas a la medida",
+    description: "Creamos herramientas y dispositivos específicos para las necesidades únicas de tu negocio o comunidad.",
     icon: Code2,
   },
   {
-    id: "electronica",
-    title: "Electrónica",
-    description: "Diseño de circuitos electrónicos, PCBs y sistemas embebidos personalizados.",
-    icon: MonitorSmartphone,
+    id: "integracion-tecnologias",
+    title: "Integración de diferentes tecnologías",
+    description: "Conectamos múltiples sistemas y tecnologías para crear soluciones integrales más potentes.",
+    icon: Settings,
   },
   {
-    id: "agricultura-tech",
-    title: "Agricultura Tecnológica",
-    description: "Soluciones de IoT y automatización para el sector agrícola, mejorando el rendimiento y uso de recursos.",
-    icon: Sprout,
-  },
-  {
-    id: "dispositivos-personalizados",
-    title: "Dispositivos Personalizados",
-    description: "Desarrollo de hardware y prototipos a medida desde la idea hasta el producto final.",
-    icon: PenTool,
+    id: "proyectos-innovacion",
+    title: "Desarrollo de proyectos de innovación",
+    description: "Investigamos y aplicamos nuevas tecnologías para generar valor y resolver problemas reales.",
+    icon: Lightbulb,
   },
 ];

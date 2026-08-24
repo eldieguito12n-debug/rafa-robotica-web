@@ -15,16 +15,16 @@ export function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Nuestros Servicios
+            ¿Qué hacemos?
           </motion.h2>
           <motion.p 
-            className="text-lg text-foreground/70 max-w-2xl mx-auto"
+            className="text-lg text-foreground/70 max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Ofrecemos un catálogo completo de soluciones tecnológicas para llevar tu negocio o proyecto al siguiente nivel.
+            Diseñamos y desarrollamos soluciones tecnológicas para diferentes sectores, desde la automatización y optimización de procesos hasta el desarrollo de prototipos, dispositivos y herramientas que faciliten el trabajo y mejoren la eficiencia.
           </motion.p>
         </div>
 

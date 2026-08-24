@@ -19,16 +19,16 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          El Futuro de la <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Robótica</span> e <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">IA</span>
+          Desarrollo · Innovación · <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Tecnología</span>
         </motion.h1>
         
         <motion.p 
-          className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto mb-10 text-balance"
+          className="text-lg md:text-2xl text-foreground/70 max-w-2xl mx-auto mb-10 text-balance"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          {siteConfig.description} Impulsando la innovación tecnológica para transformar la industria y mejorar la vida de las personas.
+          Creamos soluciones para los desafíos de hoy y las oportunidades de mañana.
         </motion.p>
         
         <motion.div 
