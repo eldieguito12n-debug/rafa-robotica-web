@@ -3,7 +3,7 @@ export const projects = [
     id: "tractor-guapa-pina",
     title: "Automatización para tractores de GUAPA PIÑA",
     description: "Sistema de automatización diseñado a medida para optimizar el funcionamiento de tractores en procesos agrícolas, mejorando la eficiencia y precisión en campo.",
-    image: "https://images.unsplash.com/photo-1592982537447-6f296d9b23b3?q=80&w=1000&auto=format&fit=crop", // Tractor image
+    image: "/tractor-guapa.jpg",
     technologies: ["Electrónica", "Automatización", "Robótica Agrícola"],
     videoUrl: "https://www.facebook.com/share/r/1ES9GFq6Vb/?mibextid=wwXIfr",
   },
