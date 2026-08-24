@@ -8,11 +8,12 @@ export const projects = [
     videoUrl: "https://www.facebook.com/share/r/1ES9GFq6Vb/?mibextid=wwXIfr",
   },
   {
-    id: "brazo-robotico",
-    title: "Brazo Robótico Industrial",
-    description: "Brazo robótico de 6 grados de libertad para línea de ensamblaje automatizada. Aumentó la eficiencia de producción en un 40%.",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1000&auto=format&fit=crop",
-    technologies: ["Arduino", "Python", "Visión Artificial"],
+    id: "robot-compras",
+    title: "Robot Autónomo para Compras",
+    description: "Prototipo de robot diseñado para realizar compras de manera autónoma o remota. Integra sistemas de visión y control a distancia.",
+    image: "/robot-compras.jpg",
+    technologies: ["Robótica Móvil", "Control Remoto", "IoT"],
+    videoUrl: "https://vt.tiktok.com/ZSVQAC6gh/",
   },
   {
     id: "drone-agricola",
