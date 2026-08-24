@@ -60,6 +60,22 @@ export function About() {
           </motion.div>
         </div>
 
+        <motion.div 
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="w-full lg:w-1/2 mb-16 mx-auto"
+        >
+          <div className="relative h-[400px] md:h-[600px] rounded-2xl overflow-hidden shadow-2xl shadow-primary/20">
+            <img 
+              src="/vr-control.jpg" 
+              alt="Rafa Robótica Innovation" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </motion.div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {cards.map((card, index) => (
             <motion.div
