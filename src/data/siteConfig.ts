@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Rafa Robótica",
   description: "Transformamos necesidades en soluciones tecnológicas con robótica, electrónica y automatización.",
-  url: "https://www.rafarobotica.co",
+  url: "https://www.rafarobotica.com",
   contact: {
     email: "contacto@rafa-robotica.com",
     phone: "+57 311 4385093",
