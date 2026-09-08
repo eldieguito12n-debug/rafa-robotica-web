@@ -7,11 +7,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.name} - Robótica e Inteligencia Artificial`,
-    template: `%s | ${siteConfig.name}`,
+    default: `Rafa Robótica - Robótica, Automatización y Tecnología`,
+    template: `%s | Rafa Robótica`,
   },
-  description: siteConfig.description,
-  keywords: ["Robótica", "Inteligencia Artificial", "Automatización", "Agricultura Tecnológica", "Electrónica", "Desarrollo de Software"],
+  description: "Rafa Robótica: empresa de desarrollo e innovación tecnológica en robótica, automatización, electrónica y soluciones tecnológicas a medida para empresas y comunidades.",
+  keywords: ["Rafa Robótica", "rafa robotica", "robótica Colombia", "automatización", "electrónica", "robots", "DJI agricultura", "automatización tractores", "innovación tecnológica", "rafarobotica"],
   authors: [{ name: "Rafa Robótica" }],
   creator: "Rafa Robótica",
   openGraph: {
