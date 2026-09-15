@@ -6,7 +6,9 @@ export const siteConfig = {
     email: "contacto@rafa-robotica.com",
     phone: "+57 311 4385093",
     whatsapp: "https://wa.me/573114385093",
-    location: "Ubicación pendiente",
+    location: "Carrera 106C, Apartado, Antioquia, Colombia",
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Carrera+106C,+Apartado,+Antioquia,+Colombia",
+    mapsEmbed: "https://maps.google.com/maps?q=Apartado,Antioquia,Colombia&t=&z=14&ie=UTF8&iwloc=&output=embed",
   },
   social: {
     facebook: "https://www.facebook.com/share/1HfavYtSWN/?mibextid=wwXIfr",

@@ -71,9 +71,23 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-foreground/60 mb-1">Ubicación</p>
-                  <p className="text-lg font-medium text-foreground">
+                  <a
+                    href={siteConfig.contact.mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg font-medium text-foreground hover:text-primary transition-colors"
+                  >
                     {siteConfig.contact.location}
-                  </p>
+                  </a>
+                  <a
+                    href={siteConfig.contact.mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 flex items-center gap-2 text-sm font-bold text-primary hover:text-cyan-400 transition-colors"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+                    Cómo llegar →
+                  </a>
                 </div>
               </div>
 
@@ -157,6 +171,43 @@ export function Contact() {
             </form>
           </motion.div>
         </div>
+
+        {/* Google Maps Embed */}
+        <motion.div
+          className="max-w-5xl mx-auto mt-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
+          <div className="rounded-2xl overflow-hidden border border-surface-light shadow-2xl shadow-primary/10">
+            <div className="bg-background px-6 py-4 flex items-center justify-between border-b border-surface-light">
+              <div className="flex items-center gap-3">
+                <MapPin className="text-primary w-5 h-5" />
+                <span className="font-semibold text-foreground">Nuestra Ubicación</span>
+              </div>
+              <a
+                href={siteConfig.contact.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-primary text-background font-bold text-sm px-4 py-2 rounded-lg hover:bg-cyan-400 transition-colors"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+                Abrir en Google Maps
+              </a>
+            </div>
+            <iframe
+              src={siteConfig.contact.mapsEmbed}
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Ubicación Rafa Robótica - Apartado, Antioquia"
+            />
+          </div>
+        </motion.div>
       </div>
     </section>
   );
