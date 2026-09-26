@@ -197,13 +197,12 @@ export function Contact() {
               </a>
             </div>
             <iframe
-              src={siteConfig.contact.mapsEmbed}
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-76.6638%2C7.8628%2C-76.6038%2C7.9028&layer=mapnik&marker=7.8828%2C-76.6338"
               width="100%"
               height="400"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
               title="Ubicación Rafa Robótica - Apartado, Antioquia"
             />
           </div>
